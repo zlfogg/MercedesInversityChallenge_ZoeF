@@ -21,25 +21,7 @@ function setLapsRemaining() {
   }
 }
 
-let laptime = 0;
-
-//function setLapTime() {
-  //const optionSoft = document.getElementById('option1');
-  //const optionMed = document.getElementById('option2');
-  //const optionHard = document.getElementById('option3');
-
-  //if (optionSoft.checked) {
-    //laptime = 90;
-    //alert(`Lap time set to: ${laptime}`);
-  //} else if (optionMed.checked) {
-    //laptime = 92;
-    //alert(`set to: ${laptime}`);
-  //} else if (optionHard.checked) {
-    //laptime = 95;
-    //alert(`set to ${laptime}`);
-  //}
-//}
-//
+let baseLapTime = 0;
 
 const optionSoft = document.getElementById('option1');
 const optionMed = document.getElementById('option2');
@@ -47,22 +29,22 @@ const optionHard = document.getElementById('option3');
 
 optionSoft.addEventListener('change', function() {
     if (this.checked) {
-      setLapTime(90);
+      setBaseLapTime(90);
     }
   });
   
 optionMed.addEventListener('change', function() {
     if (this.checked) {
-      setLapTime(92);
+      setBaseLapTime(92);
     }
   });
 
 optionHard.addEventListener('change', function() {
     if (this.checked) {
-      setLapTime(95);
+      setBaseLapTime(95);
     }
   });
 
-function setLapTime(laptime) {
-    alert(`Lap time set to: ${laptime}`);
+function setBaseLapTime(baseLapTime) {
+    alert(`Lap time set to: ${baseLapTime}`);
 }

@@ -48,3 +48,7 @@ optionHard.addEventListener('change', function() {
 function setBaseLapTime(baseLapTime) {
     alert(`Lap time set to: ${baseLapTime}`);
 }
+
+function openNewPage() {
+    window.open('infoscreen.html', '_blank');
+  }

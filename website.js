@@ -47,8 +47,20 @@ optionHard.addEventListener('change', function() {
 
 function setBaseLapTime(baseLapTime) {
     alert(`Lap time set to: ${baseLapTime}`);
+    localStorage.setItem("baseLapTime",baseLapTime);
 }
 
 function openNewPage() {
     window.open('infoscreen.html', '_blank');
+    window.location.href = `infoscreen.html?baseLapTime=${baseLapTime}`;
   }
+
+//function openNewPage() {
+//   window.open('newpage.html', '_blank');
+//  }
+
+// window.addEventListener('load', () => {
+//     localStorage.setItem('baseLapTime', baseLapTime);
+//   });
+
+//localStorage.setItem("baseLapTime",baseLapTime);

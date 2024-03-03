@@ -1,25 +1,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Radio Boxes Example</title>
+  <title>TireHelp</title>
+  <link rel="stylesheet" href="website.css">
 </head>
 <body>
-  <h1>Choose an Option:</h1>
+  <h1>Choose current compound:</h1>
   
   <form>
-    <input type="radio" id="option1" name="option" value="option1">
-    <label for="option1">Option 1</label><br>
+    <div class="radio-group">
+      <input type="radio" id="option1" name="option" value="option1">
+      <label for="option1">Soft</label>
 
-    <input type="radio" id="option2" name="option" value="option2">
-    <label for="option2">Option 2</label><br>
+      <input type="radio" id="option2" name="option" value="option2">
+      <label for="option2">Medium</label>
 
-    <input type="radio" id="option3" name="option" value="option3">
-    <label for="option3">Option 3</label><br>
+      <input type="radio" id="option3" name="option" value="option3">
+      <label for="option3">Hard</label>
+    </div>
   </form>
-
-  <button onclick="getSelectedOption()">Get Selected Option</button>
-
-  <p id="result"></p>
 
   <script src="website.js"></script>
 </body>

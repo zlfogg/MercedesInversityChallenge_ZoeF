@@ -7,10 +7,4 @@ function getSelectedOption() {
         selectedOption = option.value;
       }
     });
-  
-    if (selectedOption !== '') {
-      document.getElementById('result').innerText = `Selected Option: ${selectedOption}`;
-    } else {
-      document.getElementById('result').innerText = 'Please select an option.';
-    }
   }
